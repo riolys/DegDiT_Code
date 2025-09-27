@@ -2,11 +2,9 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2508.13786">
-    <img src="https://img.shields.io/badge/arXiv:2508.13786-b31b1b?logo=arxiv&logoColor=white" alt="arXiv">
-  </a>
+    <img src="https://img.shields.io/badge/arXiv:2508.13786-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a> &ensp;
   <a href="https://riolys.github.io/DegDiT/">
-    <img src="https://img.shields.io/badge/Project-Page-blue?logo=githubpages&logoColor=white" alt="Project Page">
-  </a>
+    <img src="https://img.shields.io/badge/Project-Page-blue?logo=githubpages&logoColor=white" alt="Project Page"></a> &ensp;
 </p>
 
 ---
