@@ -26,7 +26,6 @@ from utils import read_wav_file, pad_wav, augment_wav
 from diffusers import AutoencoderOobleck
 import torchaudio
 from deg import AudioEventGraph, parse_audio_event_description
-from audioset_events import EVENT_NAME_MAPPING_PICO, EVENT_NAME_MAPPING_AUDIOSET
 logger = get_logger(__name__)
 
 
@@ -313,8 +312,6 @@ def main():
 
     if args.datasetname == "audioset":
         event_type_mapping=EVENT_NAME_MAPPING_AUDIOSET
-    elif args.datasetname == "picoaudio":
-        event_type_mapping=EVENT_NAME_MAPPING_PICO
     model = TangoFluxDEG(config=config["model"], event_type_mapping=event_type_mapping)
     vae = AutoencoderOobleck.from_pretrained(
         "stabelaudio/stable-audio-open-1.0", 
