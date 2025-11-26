@@ -1,6 +1,7 @@
 export CUDA_VISIBLE_DEVICES=0
 export model_dir="outputs/your_path_save_models"
-##audiosetS dataset
+
+# for audiocondition
 python3 models/inference_deg.py \
     --original_args "${model_dir}/summary.jsonl" \
     --model "${model_dir}/best" \
