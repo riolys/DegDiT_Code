@@ -13,9 +13,9 @@
 
 We are actively working on improving and releasing resources for DegDiT. Stay tuned!
 
-- [ ] 🚀 Release inference code  
-- [ ] 📦 Release checkpoints  
-- [ ] 🏋️ Release training code  
+- [✅] 🚀 Release inference code  
+- [  ] 📦 Release checkpoints  
+- [✅] 🏋️ Release training code  
 
 
 ---
