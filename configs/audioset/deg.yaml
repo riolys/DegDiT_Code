@@ -1,8 +1,8 @@
 # Absolute paths for different resources
 paths:
-  train_file: "data/audioset_strong/train_strong_filtered.json"
-  val_file: "data/audioset_strong/val_strong_filtered.json"
-  test_file: "data/audioset_strong/test_strong_filtered.json"
+  train_file: "dataset_example/audioset_strong/train_strong_filtered.json" #presented as example data format
+  val_file: "dataset_example/audioset_strong/val_strong_filtered.json"
+  test_file: "dataset_example/audioset_strong/test_strong_filtered.json"
   resume_from_checkpoint: ""
   output_dir: "outputs/audiosetS/dsg_audiosetS_encoder"
   pretrained_model_path: "models/declare-lab/TangoFlux"
