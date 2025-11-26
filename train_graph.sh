@@ -1,6 +1,6 @@
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
 
-# for audioset
+# for audiocondition
 accelerate launch models/train_deg.py \
     --datasetname audioset \
     --config configs/audioset/deg.yaml \
