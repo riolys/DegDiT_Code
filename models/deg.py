@@ -460,7 +460,6 @@ class AudioEventGraphTransformerWithTextEncoder(nn.Module):
             nn.Linear(hidden_dim//4, hidden_dim//2)
         )
         
-        # 时序编码
         self.temporal_encoder = nn.Sequential(
             nn.Linear(n_frames, hidden_dim//2),
             nn.SiLU(),
