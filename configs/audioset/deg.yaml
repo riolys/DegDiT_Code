@@ -1,0 +1,43 @@
+# Absolute paths for different resources
+paths:
+  train_file: "data/audioset_strong/train_strong_filtered.json"
+  val_file: "data/audioset_strong/val_strong_filtered.json"
+  test_file: "data/audioset_strong/test_strong_filtered.json"
+  resume_from_checkpoint: ""
+  output_dir: "outputs/audiosetS/dsg_audiosetS_encoder"
+  pretrained_model_path: "models/declare-lab/TangoFlux"
+  # VAE
+  vae_path: "stabelaudio/stable-audio-open-1.0"
+
+# Training-related parameters
+training:
+  per_device_batch_size: 4 
+  learning_rate: 3e-4
+  gradient_accumulation_steps: 2
+  num_train_epochs: 200
+  num_warmup_steps: 400
+  max_audio_duration: 10
+  sample_rate: 44100
+  
+# Model and optimizer parameters
+model:
+  num_layers: 6
+  num_single_layers: 18
+  in_channels: 64
+  attention_head_dim: 128
+  joint_attention_dim: 1024
+  num_attention_heads: 8
+  audio_seq_len: 215
+  max_duration: 10
+  uncondition: false
+  text_encoder_name: "t5/flan-t5-large"
+  
+  use_dsg: true
+  dsg_max_events: 32
+  dsg_n_frames: 16
+  dsg_n_layers: 4 
+  dsg_n_heads: 8
+  dsg_graph_encoder_dim: 1024
+  freeze_transformer: false
+  train_graph_encoder_only: false
+  use_text_encoder_for_events: true
